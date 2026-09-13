@@ -1,0 +1,30 @@
+# Build directories
+build/
+bin/
+lib/
+.cmake/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# JUCE / CMake generated files
+JUCE/
+*_artefacts/
+JuceLibraryCode/
+
+# Audio outputs / temporary files
+python/*.png
+python/output_*.wav
+python/test_*.wav
+*.wav
