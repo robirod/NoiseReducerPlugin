@@ -45,7 +45,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout NoiseReducerAudioProcessor::
 
 void NoiseReducerAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-    int numChannels = getNumInputChannels();
+    int numChannels = getTotalNumInputChannels();
     m_dspCores.resize(std::max(1, numChannels));
 
     for (auto& core : m_dspCores) {

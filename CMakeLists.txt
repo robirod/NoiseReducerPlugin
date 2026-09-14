@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(NoiseReducerPlugin VERSION 1.0.0 LANGUAGES CXX)
+project(NoiseReducerPlugin VERSION 1.0.0 LANGUAGES C CXX OBJC OBJCXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -41,7 +41,7 @@ if(BUILD_JUCE_PLUGIN)
     FetchContent_Declare(
         juce
         GIT_REPOSITORY https://github.com/juce-framework/JUCE.git
-        GIT_TAG        7.0.12
+        GIT_TAG        8.0.4
         GIT_SHALLOW    TRUE
     )
     FetchContent_MakeAvailable(juce)

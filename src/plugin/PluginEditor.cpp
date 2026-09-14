@@ -52,7 +52,7 @@ void NoiseReducerAudioProcessorEditor::paint (juce::Graphics& g)
 
     g.setColour (juce::Colours::white);
     g.setFont (juce::FontOptions (20.0f, juce::Font::bold));
-    g.drawFittedText ("Dynamic Noise Reducer", getLocalBounds().removeFromTop(40), juce::Justification::centre, 1);
+    g.drawFittedText ("Dynamic Noise Reducer", getLocalBounds().removeFromTop(40), juce::Justification::centred, 1);
 
     g.setColour (juce::Colour (0xff3a3a44));
     g.drawRect (getLocalBounds().reduced(10), 2);
